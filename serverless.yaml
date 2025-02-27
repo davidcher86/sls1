@@ -14,6 +14,7 @@ provider:
   timeout: 10
 #  stackName: sls-first-stack
 
+
 functions:
   hello:
     handler: handler.hello
