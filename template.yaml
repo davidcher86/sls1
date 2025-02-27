@@ -19,3 +19,10 @@ functions:
       - httpApi:
           path: /
           method: GET
+
+resources:
+  Resources:
+    MyS3Bucket:
+      Type: 'AWS::S3::Bucket'
+      Properties:
+        BucketName: sls-bucket
