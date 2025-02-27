@@ -12,6 +12,8 @@ provider:
   region: eu-central-1
   memorySize: 512
   timeout: 10
+  deploymentBucket:
+    name: sls-cicd-bucket
 
 functions:
   hello:
