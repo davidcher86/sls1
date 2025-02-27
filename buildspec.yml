@@ -15,11 +15,13 @@ phases:
   build:
     commands:
       - echo Build started on `date`
+      - serverless deploy --stack sls-test-s
 
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Running post-build commands...
+      - serverless deploy --stack sls-test-s
 
 artifacts:
   files:
