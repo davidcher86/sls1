@@ -21,8 +21,8 @@ functions:
           method: get
 
 #resources:
-#  Resources:
-#    SlsBucket:
-#      Type: 'AWS::S3::Bucket'
-#      Properties:
-#        BucketName: sls-bucket
+Resources:
+  SlsBucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: sls-bucket
