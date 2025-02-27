@@ -12,7 +12,7 @@ provider:
   region: eu-central-1
   memorySize: 512
   timeout: 10
-  stackName: sls-first-stack
+#  stackName: sls-first-stack
 
 functions:
   hello:
