@@ -17,31 +17,28 @@ functions:
   hello:
     handler: handler.hello
     events:
-      - http:
+      - httpApi:
           path: /
           method: get
 
-resources:
-  Outputs:
-    NewServiceExport:
-      Value: 'sls stack'
-      Export:
-        Name: ${self:custom.exportName}
-
-#resources: # CloudFormation template syntax
-#  Resources:
-#    usersTable:
-#      Type: AWS::DynamoDB::Table
-#      Properties:
-#        TableName: userInfoTable
-#        AttributeDefinitions:
-#          - AttributeName: email
-#            AttributeType: S
-#          - AttributeName: info
-#            AttributeType: S
-#        KeySchema:
-#          - AttributeName: email
-#            KeyType: HASH
-#        ProvisionedThroughput:
-#          ReadCapacityUnits: 1
-#          WriteCapacityUnits: 1
+resources: # CloudFormation template syntax
+  Resources:
+    usersTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: userInfoTable
+        AttributeDefinitions:
+          - AttributeName: email
+            AttributeType: S
+          - AttributeName: info
+            AttributeType: S
+          - AttributeName: createdDt
+            AttributeType: N
+        KeySchema:
+          - AttributeName: email
+            KeyType: HASH
+          - AttributeName: createdDt
+            KeyType: RANGE
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
