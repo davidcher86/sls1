@@ -22,24 +22,24 @@ functions:
           path: /
           method: get
 
-resources: # CloudFormation template syntax
-  Resources:
-    usersTable:
-      Type: AWS::DynamoDB::Table
-      Properties:
-        TableName: userInfoTable
-        AttributeDefinitions:
-          - AttributeName: email
-            AttributeType: S
-          - AttributeName: info
-            AttributeType: S
-          - AttributeName: createdDt
-            AttributeType: N
-        KeySchema:
-          - AttributeName: email
-            KeyType: HASH
-          - AttributeName: createdDt
-            KeyType: RANGE
-        ProvisionedThroughput:
-          ReadCapacityUnits: 1
-          WriteCapacityUnits: 1
+#resources: # CloudFormation template syntax
+#  Resources:
+#    usersTable:
+#      Type: AWS::DynamoDB::Table
+#      Properties:
+#        TableName: userInfoTable
+#        AttributeDefinitions:
+#          - AttributeName: email
+#            AttributeType: S
+#          - AttributeName: info
+#            AttributeType: S
+#          - AttributeName: createdDt
+#            AttributeType: N
+#        KeySchema:
+#          - AttributeName: email
+#            KeyType: HASH
+#          - AttributeName: createdDt
+#            KeyType: RANGE
+#        ProvisionedThroughput:
+#          ReadCapacityUnits: 1
+#          WriteCapacityUnits: 1
