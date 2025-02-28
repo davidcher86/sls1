@@ -15,7 +15,9 @@ phases:
   pre_build:
     commands:
       - echo Running pre-build commands...
-#      - npm install
+      - echo "Checking if SERVERLESS_ACCESS_KEY is set"
+      - if [ -z "$SERVERLESS_ACCESS_KEY" ]; then echo "SERVERLESS_ACCESS_KEY is missing!"; exit 1; fi
+#    - npm install
   build:
     commands:
       - echo Build started on `date`
