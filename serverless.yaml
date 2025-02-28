@@ -1,7 +1,8 @@
  org: davidcher
 
-# "service" is the name of this project. This will also be added to your AWS resource names.
 service: sls-first
+
+dashboard: false
 
 plugins:
   - serverless-offline
@@ -14,7 +15,6 @@ provider:
   timeout: 10
   disableDeprecations: true
   disableMonitoring: true
-#  stackName: sls-first-stack
 
 functions:
   hello:
