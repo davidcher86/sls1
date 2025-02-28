@@ -26,7 +26,7 @@ phases:
       - echo Build completed on `date`
       - echo Running post-build commands...
 #      - serverless login
-      - serverless deploy
+      - serverless deploy --verbose --debug
 
 artifacts:
   files:
