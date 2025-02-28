@@ -1,6 +1,6 @@
 org: davidcher
 
-service: slsfirst
+service: sls-first
 
 dashboard: false
 
