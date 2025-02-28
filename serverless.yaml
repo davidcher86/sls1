@@ -16,7 +16,6 @@ provider:
   disableMonitoring: true
 #  stackName: sls-first-stack
 
-
 functions:
   hello:
     handler: handler.hello
