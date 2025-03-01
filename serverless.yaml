@@ -4,8 +4,8 @@ service: sls-first
 
 dashboard: false
 
-plugins:
-  - serverless-offline
+#plugins:
+#  - serverless-offline
 
 provider:
   name: aws

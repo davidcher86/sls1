@@ -2,7 +2,8 @@ version: 0.2
 
 env:
   secrets-manager:
-    SERVERLESS_ACCESS_KEY: serverless/access-key
+#    SERVERLESS_ACCESS_KEY: serverless/access-key
+    SERVERLESS_ACCESS_KEY: "AKtoek6SYeBHNvwJlSk0scbgzA4keNGg0ss1udgF6M7r2"
     SLS_TELEMETRY_DISABLED: 1
 
 
