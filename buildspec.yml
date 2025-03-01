@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   secrets-manager:
-    SERVERLESS_ACCESS_KEY: "sls/keys/serverless"
+    SERVERLESS_ACCESS_KEY: "serverless/access-key"
 
 
 phases:
