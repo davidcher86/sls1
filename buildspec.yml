@@ -3,7 +3,7 @@ version: 0.2
 env:
   secrets-manager:
     SERVERLESS_ACCESS_KEY: serverless/access-key
-    SLS_TELEMETRY_DISABLED: 1
+#    SLS_TELEMETRY_DISABLED: 1
 
 
 phases:
